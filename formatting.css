@@ -1,0 +1,277 @@
+/* Font families */
+@font-face {
+	font-family: "Futura";
+	src: url("futura_light_bt.ttf");
+}
+@font-face {
+	font-family: "Avenir";
+	src: url("AvenirNextLTPro-Regular.otf");
+}
+
+/* Reset body and html margin */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    background-color: rgba(1,1,1,0);
+}
+
+/* Hyperlink Styling */
+a {
+	text-decoration: none;
+	color: rgba(200,50,50,.5);
+}
+
+/* Setting the fonts and sizes for certain classes */
+h1 {
+	font-size: 42px;
+	font-family: "Lucida Bright";
+	letter-spacing: 5px;
+}
+
+h2 {
+	font-size: 20px;
+	font-family: "Futura";
+}
+
+p {
+	font-size: 18px;
+	font-family: "Avenir";
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(255,255,255,0.2); /* Header background color */
+    padding: 0px 0;
+    text-align: center;
+    top: 0; /* Ensure it sticks to the top */
+    width: 100%; /* Ensure it takes up the full width */
+    z-index: 10000; /* Keep it above other content */
+}
+header h1 {
+    color: black;
+    font-size: 36px;
+    font-family: 'Tahoma';
+}
+
+/* Nagivation Pane Styling */
+nav {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+	nav ul {
+		list-style: none;
+		padding: 0;
+		margin-top: 10;
+		margin-bottom: 10;
+	}
+
+	nav ul li {
+		display: inline-block;
+		margin: 0 15px;
+	}
+
+	nav ul li a {
+		font-family: 'Futura';
+		font-weight: bold;
+		text-decoration: none;
+		color: black;
+		font-size: 18px;
+		letter-spacing: 1.5px;
+	}
+
+	/* Hover effect for the navigation links */
+	nav ul li a:hover {
+		color: rgba(155,155,155,1); /* Font turns off-white on hover */
+	}
+
+/* Ensure there is space below the navbar */
+.content {
+	padding-top: 60px; /* add space for the navigation bar */
+}
+
+/* Containers */
+.textbox {
+	margin: 0 auto; /* center the container */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	max-width: 900px;
+	width: 70%;
+	padding-top: 0px;
+	box-sizing: border-box;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.2); /* Make it transparent */
+	margin-bottom: 0px;
+}
+
+.container { 
+	margin: 0 auto; /* center the container */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	max-width: 900px;
+	width: 32%;
+	padding-top: 0px;
+	box-sizing: border-box;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.2); /* Make it transparent */
+	border-radius: 10px; /* Rounded corners */
+}
+
+.info-box {
+	background-color: rgba(255,255,255,1);
+	border: 3px solid rgba(200,200,200,1);
+	border-radius: 8px;
+	width: 100%;
+}
+
+.sched-box {
+	background-color: rgba(255,255,255,1);
+	border: 3px solid rgba(200,200,200,1);
+	border-radius: 8px;
+	padding: 20px;
+	width: 100%;
+}
+
+/* Styling For Info Boxes */
+.info-box h2 {
+	color: rgba(100,150,200); /* Change header color */
+	font-size: 24px; /* Change header size */
+	font-family: "Lucida Bright"; /* Change font family */
+	font-weight: normal;
+	letter-spacing: 2px;
+	text-align: center; /* Center the header */
+	margin-bottom: 10px;
+}
+.sched-box h2 {
+	color: rgba(100,150,200); /* Change header color */
+	font-size: 24px; /* Change header size */
+	font-family: "Lucida Bright"; /* Change font family */
+	font-weight: normal; /* Make the header bold */
+	letter-spacing: 2px;
+	text-align: center; /* Center the header */
+	margin-bottom: 10px;
+}
+
+/* Info boxes Paragraph Styling */
+.info-box p {
+	font-size: 18px; /* Change paragraph size */
+	color: rgba(0,0,0,1); /* Change paragraph text color */
+	line-height: 1.2; /* Increase line height for better readability */
+	font-family: 'Avenir'; /* Change font family for paragraphs */
+	text-align: center; /* Align text to the left */
+	margin-bottom: 0px; /* Add space below paragraphs */
+}
+
+.info-box .title {
+	font-weight: bold;
+	color: rgba(0,0,0,1); /* Change title text color */
+	font-size: 18px; /* Change title text size */
+}
+
+.sched-box ul {
+	padding-left: 0;
+	list-style-position: outside;
+	list-style-type: none;
+	font-size: 18px; 
+	color: rgba(0,0,0,1); 
+	line-height: 1.5; 
+	font-family: 'Avenir'; 
+	text-align: center; 
+	margin-bottom: 0px;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 	/* 3 equal columns */
+    gap: 5px; 								/* Space between images */
+    padding: 0px;							/* Padding on the outside */
+    max-width: 90%; 						/* Make gallery span most of the viewport width */
+    margin: 0 auto; 						/* Center the gallery */
+}
+
+/* Image styling */
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Symbol class */
+.symbol {
+	margin: 0 auto;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	width: 100px;
+	padding: 0px;
+	/* border: 3px solid black; */
+}
+
+/* Hover effect on images */
+.gallery img:hover {
+   transform: scale(1.15);
+}
+
+/* Responsive design of the image gallery */
+@media (max-width: 768px) {
+    .gallery {
+       grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+
+/* Image captions */
+.caption {
+	visibility: hidden;
+}
+.caption:target {
+	visibility: visible;
+}
+
+/* Recommendation container */
+.rec-container {
+	margin: 0 auto; /* center the container */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	width: 60%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	box-sizing: border-box;
+	position: relative;
+	background-color: rgba(255, 255, 255, 1); /* Make it transparent */
+	border: 3px solid black;
+	border-radius: 10px; /* Rounded corners */
+}
+.rec-box {
+	background-color: rgba(255,255,255,1);
+	display: inline-block;
+	width: 40%;
+	vertical-align: top;
+}
+.rec-box img {
+	width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}

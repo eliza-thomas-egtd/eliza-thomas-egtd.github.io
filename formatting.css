@@ -103,7 +103,6 @@ nav {
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 10px;
-	max-width: 900px;
 	width: 70%;
 	padding-top: 0px;
 	box-sizing: border-box;
@@ -118,7 +117,6 @@ nav {
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 10px;
-	max-width: 900px;
 	width: 32%;
 	padding-top: 0px;
 	box-sizing: border-box;
@@ -235,6 +233,26 @@ nav {
         grid-template-columns: 1fr; /* 1 column on very small screens */
     }
 }
+ 
+/* Responsive design of the paragraphs in the main pages: */
+@media (max-width: 900px) {
+	.textbox {
+		width: 90%;
+	}
+}
+
+/* Responsive widths of the containers on the Wedding Info page */
+@media (max-width: 900px) {
+	.textbox {
+		width: 50%;
+	}
+}
+@media (max-width: 700px) {
+	.textbox {
+		width: 75%;
+	}
+}
+
 
 /* Image captions */
 .caption {

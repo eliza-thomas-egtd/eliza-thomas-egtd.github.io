@@ -111,6 +111,19 @@ nav {
 	margin-bottom: 0px;
 }
 
+.textbox h3 {
+	font-size: 22px;
+	font-family: "Futura";
+	text-align: center; 
+	padding: 5px; 
+	margin-top: -8px; 
+	margin-bottom: 80px;
+}
+
+.textbox h3:nth-child(2) {
+	display: none;
+}
+
 .container { 
 	margin: 0 auto; /* center the container */
 	display: flex;
@@ -244,6 +257,15 @@ nav {
 	}
 }
 
+/* Responsive if-else statement based on screen size for what the thank you message looks like: */
+@media (max-width: 970px) {
+	.textbox h3:nth-child(1) {
+		display: none;
+	}
+	.textbox h3:nth-child(2) {
+		display: block;
+	}
+}
 
 /* Image captions */
 .caption {

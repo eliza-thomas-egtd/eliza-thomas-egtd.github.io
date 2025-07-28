@@ -159,12 +159,28 @@ nav {
 	width: 100%;
 }
 
+.sched-container { 
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	gap: 15px;
+	width: 60%;
+	padding-top: 0px;
+	box-sizing: border-box;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.2); /* Make it transparent */
+	border-radius: 10px; /* Rounded corners */
+}
+
 .sched-box {
 	background-color: rgba(255,255,255,1);
-	border: 3px solid rgba(200,200,200,1);
-	border-radius: 8px;
-	padding: 20px;
-	width: 100%;
+	border: none; /*3px solid rgba(200,200,200,1); */
+	justify-content: left;
+	border-radius: 0px;
+	padding: 0px;
+	width: 45%;
+	float: left;
 }
 
 /* Styling For Info Boxes */
@@ -179,11 +195,11 @@ nav {
 }
 .sched-box h2 {
 	color: rgba(100,150,200); /* Change header color */
-	font-size: 24px; /* Change header size */
+	font-size: 20px; /* Change header size */
 	font-family: "Lucida Bright"; /* Change font family */
 	font-weight: normal; /* Make the header bold */
 	letter-spacing: 2px;
-	text-align: center; /* Center the header */
+	text-align: left; /* Center the header */
 	margin-bottom: 10px;
 }
 
@@ -207,12 +223,13 @@ nav {
 	padding-left: 0;
 	list-style-position: outside;
 	list-style-type: none;
-	font-size: 18px; 
+	font-size: 14px; 
 	color: rgba(0,0,0,1); 
 	line-height: 1.5; 
 	font-family: 'Avenir'; 
 	text-align: center; 
 	margin-bottom: 0px;
+	margin-top: 0px;
 }
 
 /* Gallery */

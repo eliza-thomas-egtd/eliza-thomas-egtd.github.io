@@ -134,7 +134,7 @@ nav {
 	padding-top: 0px;
 	box-sizing: border-box;
 	position: relative;
-	background-color: rgba(255, 255, 255, 0.2); /* Make it transparent */
+	background-color: rgba(255, 255, 255, 0); /* Make it transparent */
 	border-radius: 10px; /* Rounded corners */
 }
 
@@ -144,7 +144,7 @@ nav {
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 10px;
-	width: 60%;
+	width: 75%;
 	padding-top: 0px;
 	box-sizing: border-box;
 	position: relative;
@@ -169,12 +169,12 @@ nav {
 	padding-top: 0px;
 	box-sizing: border-box;
 	position: relative;
-	background-color: rgba(255, 255, 255, 0.2); /* Make it transparent */
+	background-color: rgba(255, 255, 255, 0); /* Make it transparent */
 	border-radius: 10px; /* Rounded corners */
 }
 
 .sched-box {
-	background-color: rgba(255,255,255,1);
+	background-color: rgba(255,255,255,0);
 	border: none; /*3px solid rgba(200,200,200,1); */
 	justify-content: left;
 	border-radius: 0px;
@@ -251,6 +251,32 @@ nav {
     transition: transform 0.3s ease;
 }
 
+/* Hover effect on images */
+.gallery img:hover {
+   transform: scale(1.15);
+}
+
+/* SMALLER GALLERY */
+/* Gallery */
+.gallery_small {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 	/* 3 equal columns */
+    gap: 5px; 								/* Space between images */
+    padding: 0px;							/* Padding on the outside */
+    max-width: 70%; 						/* Make gallery span most of the viewport width */
+    margin: 0 auto; 						/* Center the gallery */
+}
+.gallery_small img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.gallery_small img:hover {
+   transform: scale(1.10);
+}
+
 /* Symbol class */
 .symbol {
 	margin: 0 auto;
@@ -259,11 +285,6 @@ nav {
 	width: 100px;
 	padding: 0px;
 	/* border: 3px solid black; */
-}
-
-/* Hover effect on images */
-.gallery img:hover {
-   transform: scale(1.15);
 }
 
 /* Responsive design of the image gallery */

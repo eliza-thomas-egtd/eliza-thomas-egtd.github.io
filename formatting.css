@@ -159,6 +159,15 @@ nav {
 	width: 100%;
 }
 
+.info-box2 {
+	background-color: rgba(255,255,255,0);
+	border: none; /*3px solid rgba(200,200,200,1); */
+	justify-content: center;
+	border-radius: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
 .sched-container { 
 	margin: 0 auto;
 	display: flex;
@@ -193,6 +202,15 @@ nav {
 	text-align: center; /* Center the header */
 	margin-bottom: 10px;
 }
+.info-box2 h2 {
+	color: rgba(100,150,200); /* Change header color */
+	font-size: 24px; /* Change header size */
+	font-family: "Lucida Bright"; /* Change font family */
+	font-weight: normal;
+	letter-spacing: 2px;
+	text-align: center; /* Center the header */
+	margin-bottom: 10px;
+}
 .sched-box h2 {
 	color: rgba(100,150,200); /* Change header color */
 	font-size: 20px; /* Change header size */
@@ -210,6 +228,14 @@ nav {
 	line-height: 1.2; /* Increase line height for better readability */
 	font-family: 'Avenir'; /* Change font family for paragraphs */
 	text-align: center; /* Align text to the left */
+	margin-bottom: 0px; /* Add space below paragraphs */
+}
+.info-box2 ul {
+	font-size: 14px; /* Change paragraph size */
+	color: rgba(0,0,0,1); /* Change paragraph text color */
+	line-height: 1.2; /* Increase line height for better readability */
+	font-family: 'Avenir'; /* Change font family for paragraphs */
+	text-align: left; /* Align text to the left */
 	margin-bottom: 0px; /* Add space below paragraphs */
 }
 
